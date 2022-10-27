@@ -1,0 +1,4 @@
+.mainFxmlClass {
+    -fx-background-image: url('Saida.jpg');
+    -fx-background-size: cover;
+}

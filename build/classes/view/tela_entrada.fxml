@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" stylesheets="@../css/tela_entrada.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EntradaController">
+   <children>
+      <Button layoutX="38.0" layoutY="6.0" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="19.0" prefWidth="73.0" text="VOLTAR">
+         <font>
+            <Font size="1.0" />
+         </font></Button>
+      <TextField fx:id="txt_placa" layoutX="17.0" layoutY="56.0" prefHeight="25.0" prefWidth="103.0" promptText="PLACA" styleClass="mainFxmlClass" stylesheets="@../css/box_user_pass.css" />
+      <Button layoutX="14.0" layoutY="83.0" mnemonicParsing="false" onAction="#cadastroEntrada" opacity="0.0" prefHeight="19.0" prefWidth="103.0" text="Buscar">
+         <font>
+            <Font size="1.0" />
+         </font></Button>
+      <TableView fx:id="tabela" layoutX="154.0" prefHeight="600.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="24.0" text="ID" />
+          <TableColumn fx:id="PLACA" prefWidth="115.0" text="PLACA" />
+            <TableColumn fx:id="DATA" prefWidth="100.0" text="DATA" />
+            <TableColumn fx:id="ENTRADA" prefWidth="100.0" text="ENTRADA" />
+            <TableColumn fx:id="SAIDA" prefWidth="100.0" text="SAÍDA" />
+            <TableColumn fx:id="TOTAL" prefWidth="100.0" text="TOTAL" />
+            <TableColumn fx:id="PAGO" prefWidth="110.0" text="PAGO" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

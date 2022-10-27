@@ -1,0 +1,4 @@
+.mainFxmlClass {
+    -fx-background-image: url('Login.jpg');
+    -fx-background-size: cover;
+}

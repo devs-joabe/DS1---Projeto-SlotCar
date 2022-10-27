@@ -1,0 +1,4 @@
+.mainFxmlClass {
+    -fx-background-image: url('Calculo.jpg');
+    -fx-background-size: cover;
+}
